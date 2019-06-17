@@ -1,5 +1,6 @@
 package pl.propertymanager.controller;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,7 @@ public class PropertyController {
 	private PropertyService propertyService;
 	
 	@GetMapping("/all")
-	public Iterable<Property> getAll() {
+	public List<Property> getAll() {
 		return propertyService.findAll();
 	}
 	
