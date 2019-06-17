@@ -1,5 +1,6 @@
 package pl.propertymanager.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +24,7 @@ public class PropertyService {
 		return propertyRepository.findById(index);
 	}
 	
-	public Iterable<Property> findAll() {
+	public List<Property> findAll() {
 		return propertyRepository.findAll();
 	}
 	
